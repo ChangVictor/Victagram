@@ -1,0 +1,6 @@
+framework module Pods_Victagram {
+  umbrella header "Pods-Victagram-umbrella.h"
+
+  export *
+  module * { export * }
+}

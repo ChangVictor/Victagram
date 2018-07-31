@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
+		EFD47784210FCE0E00725264 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFD47783210FCE0E00725264 /* GoogleService-Info.plist */; };
+		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
+		EFE7653E210F9900000F93DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* ViewController.swift */; };
+		EFE76541210F9900000F93DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7653F210F9900000F93DF /* Main.storyboard */; };
+		EFE76543210F9900000F93DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE76542210F9900000F93DF /* Assets.xcassets */; };
+		EFE76546210F9900000F93DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE76544210F9900000F93DF /* LaunchScreen.storyboard */; };
+		F5640BC03BFC6274CA8B7887 /* Pods_Victagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Victagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.release.xcconfig"; sourceTree = "<group>"; };
+		A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.debug.xcconfig"; sourceTree = "<group>"; };
+		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFD47783210FCE0E00725264 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFE7653D210F9900000F93DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFE76540210F9900000F93DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFE76542210F9900000F93DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFE76545210F9900000F93DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFE76547210F9901000F93DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFE76535210F98FF000F93DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5640BC03BFC6274CA8B7887 /* Pods_Victagram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		701674F7E507155D92770CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C827218E925D07C2622807FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */,
+				7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFE7652F210F98FF000F93DF = {
+			isa = PBXGroup;
+			children = (
+				EFE7653A210F98FF000F93DF /* Victagram */,
+				EFE76539210F98FF000F93DF /* Products */,
+				EFD47783210FCE0E00725264 /* GoogleService-Info.plist */,
+				C827218E925D07C2622807FC /* Pods */,
+				701674F7E507155D92770CC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFE76539210F98FF000F93DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE76538210F98FF000F93DF /* Victagram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFE7653A210F98FF000F93DF /* Victagram */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
+				EFE7653D210F9900000F93DF /* ViewController.swift */,
+				EFE7653F210F9900000F93DF /* Main.storyboard */,
+				EFE76542210F9900000F93DF /* Assets.xcassets */,
+				EFE76544210F9900000F93DF /* LaunchScreen.storyboard */,
+				EFE76547210F9901000F93DF /* Info.plist */,
+				EFD47781210FC85400725264 /* Extensions.swift */,
+			);
+			path = Victagram;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFE76537210F98FF000F93DF /* Victagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE7654A210F9901000F93DF /* Build configuration list for PBXNativeTarget "Victagram" */;
+			buildPhases = (
+				FF15F869AB75CD2510590E4C /* [CP] Check Pods Manifest.lock */,
+				EFE76534210F98FF000F93DF /* Sources */,
+				EFE76535210F98FF000F93DF /* Frameworks */,
+				EFE76536210F98FF000F93DF /* Resources */,
+				EBE9E8B27CF75DFDD8566D65 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Victagram;
+			productName = Victagram;
+			productReference = EFE76538210F98FF000F93DF /* Victagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFE76530210F98FF000F93DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Victor Chang";
+				TargetAttributes = {
+					EFE76537210F98FF000F93DF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = EFE76533210F98FF000F93DF /* Build configuration list for PBXProject "Victagram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFE7652F210F98FF000F93DF;
+			productRefGroup = EFE76539210F98FF000F93DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFE76537210F98FF000F93DF /* Victagram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFE76536210F98FF000F93DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE76546210F9900000F93DF /* LaunchScreen.storyboard in Resources */,
+				EFD47784210FCE0E00725264 /* GoogleService-Info.plist in Resources */,
+				EFE76543210F9900000F93DF /* Assets.xcassets in Resources */,
+				EFE76541210F9900000F93DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBE9E8B27CF75DFDD8566D65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Victagram/Pods-Victagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Victagram/Pods-Victagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF15F869AB75CD2510590E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Victagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFE76534210F98FF000F93DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE7653E210F9900000F93DF /* ViewController.swift in Sources */,
+				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
+				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFE7653F210F9900000F93DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE76540210F9900000F93DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFE76544210F9900000F93DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE76545210F9900000F93DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFE76548210F9901000F93DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFE76549210F9901000F93DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFE7654B210F9901000F93DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Victagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorChang.Victagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFE7654C210F9901000F93DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Victagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VictorChang.Victagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFE76533210F98FF000F93DF /* Build configuration list for PBXProject "Victagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE76548210F9901000F93DF /* Debug */,
+				EFE76549210F9901000F93DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE7654A210F9901000F93DF /* Build configuration list for PBXNativeTarget "Victagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE7654B210F9901000F93DF /* Debug */,
+				EFE7654C210F9901000F93DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFE76530210F98FF000F93DF /* Project object */;
+}

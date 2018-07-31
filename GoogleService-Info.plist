@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>72605752670-4p08prb1ju7ov6hgalnuskcoupdtdkdm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.72605752670-4p08prb1ju7ov6hgalnuskcoupdtdkdm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfZb1tDbcqbibQaMetwR4R0yCE2V-SdCU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>72605752670</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.VictorChang.EntregableFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>entregablefirebase-8f673</string>
+	<key>STORAGE_BUCKET</key>
+	<string>entregablefirebase-8f673.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:72605752670:ios:61245d73df9b7810</string>
+	<key>DATABASE_URL</key>
+	<string>https://entregablefirebase-8f673.firebaseio.com</string>
+</dict>
+</plist>
