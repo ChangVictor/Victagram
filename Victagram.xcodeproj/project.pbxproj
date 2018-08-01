@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */; };
+		EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247862111E06700A45936 /* MainTabBarController.swift */; };
+		EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247882111E2FF00A45936 /* UserProfileController.swift */; };
+		EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62478B2112067500A45936 /* UserProfileHeader.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
-		EFD47784210FCE0E00725264 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFD47783210FCE0E00725264 /* GoogleService-Info.plist */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* ViewController.swift */; };
 		EFE76541210F9900000F93DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7653F210F9900000F93DF /* Main.storyboard */; };
@@ -21,8 +24,11 @@
 		7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Victagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.release.xcconfig"; sourceTree = "<group>"; };
 		A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.debug.xcconfig"; sourceTree = "<group>"; };
+		EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF6247862111E06700A45936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EF6247882111E2FF00A45936 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		EF62478B2112067500A45936 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		EFD47783210FCE0E00725264 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE7653D210F9900000F93DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,12 +67,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF62478A2112065F00A45936 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EF6247882111E2FF00A45936 /* UserProfileController.swift */,
+				EF62478B2112067500A45936 /* UserProfileHeader.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
 		EFE7652F210F98FF000F93DF = {
 			isa = PBXGroup;
 			children = (
 				EFE7653A210F98FF000F93DF /* Victagram */,
 				EFE76539210F98FF000F93DF /* Products */,
-				EFD47783210FCE0E00725264 /* GoogleService-Info.plist */,
 				C827218E925D07C2622807FC /* Pods */,
 				701674F7E507155D92770CC7 /* Frameworks */,
 			);
@@ -83,13 +97,16 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EF62478A2112065F00A45936 /* UserProfile */,
 				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
+				EF6247862111E06700A45936 /* MainTabBarController.swift */,
 				EFE7653D210F9900000F93DF /* ViewController.swift */,
 				EFE7653F210F9900000F93DF /* Main.storyboard */,
 				EFE76542210F9900000F93DF /* Assets.xcassets */,
 				EFE76544210F9900000F93DF /* LaunchScreen.storyboard */,
 				EFE76547210F9901000F93DF /* Info.plist */,
 				EFD47781210FC85400725264 /* Extensions.swift */,
+				EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */,
 			);
 			path = Victagram;
 			sourceTree = "<group>";
@@ -155,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE76546210F9900000F93DF /* LaunchScreen.storyboard in Resources */,
-				EFD47784210FCE0E00725264 /* GoogleService-Info.plist in Resources */,
+				EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */,
 				EFE76543210F9900000F93DF /* Assets.xcassets in Resources */,
 				EFE76541210F9900000F93DF /* Main.storyboard in Resources */,
 			);
@@ -173,12 +190,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Victagram/Pods-Victagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +232,9 @@
 			files = (
 				EFE7653E210F9900000F93DF /* ViewController.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
+				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
+				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
+				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,
 				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

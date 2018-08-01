@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>72605752670-4p08prb1ju7ov6hgalnuskcoupdtdkdm.apps.googleusercontent.com</string>
+	<string>749386528235-5vfrt177oe3h3a32ge0imp1ajqt13r8h.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.72605752670-4p08prb1ju7ov6hgalnuskcoupdtdkdm</string>
+	<string>com.googleusercontent.apps.749386528235-5vfrt177oe3h3a32ge0imp1ajqt13r8h</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCfZb1tDbcqbibQaMetwR4R0yCE2V-SdCU</string>
+	<string>AIzaSyAZ1DrNrSfvrSlBMB-0diyxCe7gnf0YbqY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>72605752670</string>
+	<string>749386528235</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.VictorChang.EntregableFirebase</string>
+	<string>com.VictorChang.Victagram</string>
 	<key>PROJECT_ID</key>
-	<string>entregablefirebase-8f673</string>
+	<string>victagram-7bbe8</string>
 	<key>STORAGE_BUCKET</key>
-	<string>entregablefirebase-8f673.appspot.com</string>
+	<string>victagram-7bbe8.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:72605752670:ios:61245d73df9b7810</string>
+	<string>1:749386528235:ios:c1b8e540459202ab</string>
 	<key>DATABASE_URL</key>
-	<string>https://entregablefirebase-8f673.firebaseio.com</string>
+	<string>https://victagram-7bbe8.firebaseio.com</string>
 </dict>
 </plist>
