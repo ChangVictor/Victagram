@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */; };
+		EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59B6BF2114AD5D007654A1 /* LoginController.swift */; };
 		EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247862111E06700A45936 /* MainTabBarController.swift */; };
 		EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247882111E2FF00A45936 /* UserProfileController.swift */; };
 		EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62478B2112067500A45936 /* UserProfileHeader.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
-		EFE7653E210F9900000F93DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* ViewController.swift */; };
+		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
 		EFE76541210F9900000F93DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7653F210F9900000F93DF /* Main.storyboard */; };
 		EFE76543210F9900000F93DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE76542210F9900000F93DF /* Assets.xcassets */; };
 		EFE76546210F9900000F93DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE76544210F9900000F93DF /* LaunchScreen.storyboard */; };
@@ -25,13 +26,14 @@
 		7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.release.xcconfig"; sourceTree = "<group>"; };
 		A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.debug.xcconfig"; sourceTree = "<group>"; };
 		EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF59B6BF2114AD5D007654A1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF6247862111E06700A45936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		EF6247882111E2FF00A45936 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		EF62478B2112067500A45936 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFE7653D210F9900000F93DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFE7653D210F9900000F93DF /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		EFE76540210F9900000F93DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFE76542210F9900000F93DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE76545210F9900000F93DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +69,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF59B6BE2114AD24007654A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF59B6BF2114AD5D007654A1 /* LoginController.swift */,
+				EFE7653D210F9900000F93DF /* SignUpController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		EF62478A2112065F00A45936 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +108,10 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EF59B6BE2114AD24007654A1 /* Login */,
 				EF62478A2112065F00A45936 /* UserProfile */,
 				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
 				EF6247862111E06700A45936 /* MainTabBarController.swift */,
-				EFE7653D210F9900000F93DF /* ViewController.swift */,
 				EFE7653F210F9900000F93DF /* Main.storyboard */,
 				EFE76542210F9900000F93DF /* Assets.xcassets */,
 				EFE76544210F9900000F93DF /* LaunchScreen.storyboard */,
@@ -230,12 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE7653E210F9900000F93DF /* ViewController.swift in Sources */,
+				EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
 				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,
 				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
+				EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

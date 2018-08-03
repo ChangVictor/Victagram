@@ -55,7 +55,9 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	let postsLabel: UILabel = {
 		let label = UILabel()
-		label.text = "11\nposts"
+		let attributedText = NSMutableAttributedString(string: "0\n", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14)])
+		attributedText.append(NSMutableAttributedString(string: "posts", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray, kCTFontAttributeName as NSAttributedStringKey: UIFont.systemFont(ofSize: 14)]))
+		label.attributedText = attributedText
 		label.numberOfLines = 0
 		label.textAlignment = .center
 		return label
@@ -63,7 +65,9 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	let followersLabel: UILabel = {
 		let label = UILabel()
-		label.text = "11\nposts"
+		let attributedText = NSMutableAttributedString(string: "0\n", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14)])
+		attributedText.append(NSMutableAttributedString(string: "followers", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray, kCTFontAttributeName as NSAttributedStringKey: UIFont.systemFont(ofSize: 14)]))
+		label.attributedText = attributedText
 		label.numberOfLines = 0
 		label.textAlignment = .center
 		return label
@@ -71,7 +75,9 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	let followingLabel: UILabel = {
 		let label = UILabel()
-		label.text = "11\nposts"
+		let attributedText = NSMutableAttributedString(string: "0\n", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14)])
+		attributedText.append(NSMutableAttributedString(string: "following", attributes: [NSAttributedStringKey.foregroundColor: UIColor.lightGray, kCTFontAttributeName as NSAttributedStringKey: UIFont.systemFont(ofSize: 14)]))
+		label.attributedText = attributedText
 		label.numberOfLines = 0
 		label.textAlignment = .center
 		return label
@@ -82,6 +88,9 @@ class UserProfileHeader: UICollectionViewCell {
 		button.setTitle("Edit Profile", for: .normal)
 		button.setTitleColor(.black, for: .normal)
 		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+		button.layer.borderColor = UIColor.lightGray.cgColor
+		button.layer.borderWidth = 1
+		button.layer.cornerRadius = 3
 		return button
 	}()
 	override init(frame: CGRect) {
@@ -100,7 +109,7 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	fileprivate func setupEditProfileButton() {
 		addSubview(editProfileButton)
-		editProfileButton.anchor(top: postsLabel.bottomAnchor, left: postsLabel.leftAnchor, bottom: nil, right: followingLabel.rightAnchor, paddingTop: 8, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 34)
+		editProfileButton.anchor(top: postsLabel.bottomAnchor, left: postsLabel.leftAnchor, bottom: nil, right: followingLabel.rightAnchor, paddingTop: 2, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 34)
 	}
 	
 	fileprivate func setupStatsView() {
@@ -117,13 +126,22 @@ class UserProfileHeader: UICollectionViewCell {
 	}
 		
 	fileprivate func setupBottomToolbar() {
-		let stackView = UIStackView(arrangedSubviews: [gridButton, listButton, bookmarkButton])
 		
+		let topDividerView = UIView()
+		topDividerView.backgroundColor = UIColor.lightGray
+		let bottomDividerView = UIView()
+		bottomDividerView.backgroundColor = UIColor.lightGray
+		
+		let stackView = UIStackView(arrangedSubviews: [gridButton, listButton, bookmarkButton])
 		stackView.axis = .horizontal
 		stackView.distribution = .fillEqually
 		
 		addSubview(stackView)
+		addSubview(topDividerView)
+		addSubview(bottomDividerView)
 		stackView.anchor(top: nil, left: leftAnchor, bottom: self.bottomAnchor, right: rightAnchor , paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+		topDividerView.anchor(top: stackView.topAnchor , left: leftAnchor, bottom: nil, right: rightAnchor , paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5)
+		bottomDividerView.anchor(top: stackView.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5)
 	}
 
 	
