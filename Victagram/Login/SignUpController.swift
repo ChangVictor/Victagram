@@ -113,14 +113,22 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
 			guard let image = self.plusPhotoButton.imageView?.image else { return }
 			guard let uploadData = UIImageJPEGRepresentation(image, 0.3) else { return }
 			guard let filename = user?.user.uid else { return }
-			Storage.storage().reference().child("profile_image").child(filename).putData(uploadData, metadata: nil, completion: { (metadata, err) in
+			let storageRef = Storage.storage().reference().child("profile_images").child(filename)
+			storageRef.putData(uploadData, metadata: nil, completion: { (metadata, err) in
 				
 				if let err = err {
 					print("Failed to upload profile image:", err)
 					return
 				}
+
+//			Storage.storage().reference().child("profile_image").child(filename).putData(uploadData, metadata: nil, completion: { (metadata, err) in
+//
+//				if let err = err {
+//					print("Failed to upload profile image:", err)
+//					return
+//				}
 				// Firebase 5 Update: Must now retrieve downloadURL
-				Storage.storage().reference().downloadURL(completion: { (downloadURL, err) in
+				storageRef.downloadURL(completion: { (downloadURL, err) in
 					guard let profileImageUrl = downloadURL?.absoluteString else { return }
 					
 					print("Successfully uploaded profile image:", profileImageUrl)
@@ -138,7 +146,8 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
 						}
 						
 						print("Successfully saved user info to db")
-						
+						guard let mainTabBarController = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController else { return }
+						mainTabBarController.setupViewController()
 						self.dismiss(animated: true, completion: nil)
 						
 					})
@@ -147,11 +156,26 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
 		})
 	}
 	
+	let alreadyHaveAccount: UIButton = {
+		let button = UIButton(type: .system)
+		
+		let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.lightGray])
+		
+		button.setAttributedTitle(attributedTitle, for: .normal)
+		attributedTitle.append(NSMutableAttributedString(string: "Login", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.rgb(red: 17, green: 154, blue: 237)]))
+		button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
+		return button
+	}()
 	
+	@objc func handleAlreadyHaveAccount() {
+		_ = navigationController?.popViewController(animated: true)
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		
+		view.addSubview(alreadyHaveAccount)
+		alreadyHaveAccount.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
 		view.backgroundColor = .white
 
 		view.addSubview(plusPhotoButton)

@@ -17,7 +17,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		super.viewDidLoad()
 		
 		collectionView?.backgroundColor = .white
-		navigationItem.title = Auth.auth().currentUser?.displayName
+		navigationItem.title = Auth.auth().currentUser?.uid
 		
 		fetchUser()
 		collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerId")
@@ -37,6 +37,10 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 			
 			do {
 				try Auth.auth().signOut()
+				
+				let loginController = LoginController()
+				let navController = UINavigationController(rootViewController: loginController)
+				self.present(navController, animated: true, completion: nil)
 			} catch let signOutError {
 				print("Faile to sign Out:", signOutError)
 			}
@@ -74,7 +78,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath) as! UserProfileHeader
 		
-		
+		header.user = self.user
 		
 		return header
 	}

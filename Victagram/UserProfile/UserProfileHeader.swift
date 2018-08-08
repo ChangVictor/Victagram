@@ -20,7 +20,7 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	let profileImageView: UIImageView = {
 		let imageView = UIImageView()
-		imageView.backgroundColor = .red
+		imageView.backgroundColor = .gray
 		return imageView
 	}()
 	
@@ -148,11 +148,12 @@ class UserProfileHeader: UICollectionViewCell {
 	fileprivate func setupProfileImage() {
 		
 		guard let profileImageUrl = user?.profileImageUrl else { return }
-		guard let url = URL(string: profileImageUrl) else { return }
+ 		guard let url = URL(string: profileImageUrl) else { return }
 		URLSession.shared.dataTask(with: url) { (data, response, error) in
 			// check for error and construct image using data
 			if let error = error {
-				print("Failed to fetch profile image", error)
+				print("Failed to fetch profile image:", error)
+				return
 			}
 			
 			guard let data = data else { return }
