@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */; };
+		EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */; };
+		EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */; };
+		EF4A1A4921222B9C0010C6FD /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1A4821222B9C0010C6FD /* PhotoSelectorHeader.swift */; };
+		EF4A1A4B212235590010C6FD /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1A4A212235590010C6FD /* SharePhotoController.swift */; };
 		EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59B6BF2114AD5D007654A1 /* LoginController.swift */; };
 		EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247862111E06700A45936 /* MainTabBarController.swift */; };
 		EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247882111E2FF00A45936 /* UserProfileController.swift */; };
@@ -26,6 +30,10 @@
 		7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.release.xcconfig"; sourceTree = "<group>"; };
 		A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.debug.xcconfig"; sourceTree = "<group>"; };
 		EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
+		EF4A1A4821222B9C0010C6FD /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		EF4A1A4A212235590010C6FD /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		EF59B6BF2114AD5D007654A1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF6247862111E06700A45936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		EF6247882111E2FF00A45936 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF46B6EC211F130300303E92 /* Add Photo */ = {
+			isa = PBXGroup;
+			children = (
+				EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */,
+				EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */,
+				EF4A1A4821222B9C0010C6FD /* PhotoSelectorHeader.swift */,
+				EF4A1A4A212235590010C6FD /* SharePhotoController.swift */,
+			);
+			path = "Add Photo";
+			sourceTree = "<group>";
+		};
 		EF59B6BE2114AD24007654A1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +127,7 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EF46B6EC211F130300303E92 /* Add Photo */,
 				EF59B6BE2114AD24007654A1 /* Login */,
 				EF62478A2112065F00A45936 /* UserProfile */,
 				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
@@ -241,13 +261,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4A1A4B212235590010C6FD /* SharePhotoController.swift in Sources */,
 				EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */,
+				EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
 				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,
 				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
 				EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */,
+				EF4A1A4921222B9C0010C6FD /* PhotoSelectorHeader.swift in Sources */,
+				EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
