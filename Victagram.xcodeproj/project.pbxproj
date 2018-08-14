@@ -16,6 +16,8 @@
 		EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247862111E06700A45936 /* MainTabBarController.swift */; };
 		EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247882111E2FF00A45936 /* UserProfileController.swift */; };
 		EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62478B2112067500A45936 /* UserProfileHeader.swift */; };
+		EF78046721235A360061E6FA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046621235A360061E6FA /* Post.swift */; };
+		EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
@@ -38,6 +40,8 @@
 		EF6247862111E06700A45936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		EF6247882111E2FF00A45936 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		EF62478B2112067500A45936 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		EF78046621235A360061E6FA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +106,17 @@
 			children = (
 				EF6247882111E2FF00A45936 /* UserProfileController.swift */,
 				EF62478B2112067500A45936 /* UserProfileHeader.swift */,
+				EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		EF78046521235A250061E6FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF78046621235A360061E6FA /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EFE7652F210F98FF000F93DF = {
@@ -127,6 +140,7 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EF78046521235A250061E6FA /* Model */,
 				EF46B6EC211F130300303E92 /* Add Photo */,
 				EF59B6BE2114AD24007654A1 /* Login */,
 				EF62478A2112065F00A45936 /* UserProfile */,
@@ -264,7 +278,9 @@
 				EF4A1A4B212235590010C6FD /* SharePhotoController.swift in Sources */,
 				EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */,
 				EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */,
+				EF78046721235A360061E6FA /* Post.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
+				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
 				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,

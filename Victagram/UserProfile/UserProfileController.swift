@@ -21,9 +21,37 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		
 		fetchUser()
 		collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerId")
-		collectionView?.register(UICollectionViewCell.self , forCellWithReuseIdentifier: cellId)
+		collectionView?.register(UserProfilePhotoCell.self , forCellWithReuseIdentifier: cellId)
 		
 		setupLogOutButton()
+		
+		fetchPosts()
+	}
+	
+	var posts = [Post]()
+	fileprivate func fetchPosts() {
+		
+		guard let uid = Auth.auth().currentUser?.uid else { return }
+		
+		let ref = Database.database().reference().child("posts").child(uid)
+		
+		ref.observeSingleEvent(of: .value, with: { (snapshot) in
+			
+			guard let dictionaries = snapshot.value as? [String: Any] else { return }
+			
+			dictionaries.forEach({ (key, value) in
+//				print("Key: \(key), Value: \(value)")
+				guard let dictionary = value as? [String: Any] else { return }
+				
+				let post = Post(dictionary: dictionary)
+				self.posts.append(post)
+			})
+			
+			self.collectionView?.reloadData()
+			
+		}) { (error) in
+			print("Failed to fetch posts: ", error)
+		}
 	}
 	
 	fileprivate func setupLogOutButton() {
@@ -52,12 +80,13 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 7
+		return posts.count
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-		cell.backgroundColor = .purple
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! UserProfilePhotoCell
+
+		cell.post = posts[indexPath.item]
 		
 		return cell
 	}
