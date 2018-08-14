@@ -18,6 +18,7 @@
 		EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62478B2112067500A45936 /* UserProfileHeader.swift */; };
 		EF78046721235A360061E6FA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046621235A360061E6FA /* Post.swift */; };
 		EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */; };
+		EF78046C212371780061E6FA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046B212371780061E6FA /* CustomImageView.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
@@ -42,6 +43,7 @@
 		EF62478B2112067500A45936 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		EF78046621235A360061E6FA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
+		EF78046B212371780061E6FA /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EF78046A212371560061E6FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EFD47781210FC85400725264 /* Extensions.swift */,
+				EF78046B212371780061E6FA /* CustomImageView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EFE7652F210F98FF000F93DF = {
 			isa = PBXGroup;
 			children = (
@@ -147,10 +158,10 @@
 				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
 				EF6247862111E06700A45936 /* MainTabBarController.swift */,
 				EFE7653F210F9900000F93DF /* Main.storyboard */,
+				EF78046A212371560061E6FA /* Utils */,
 				EFE76542210F9900000F93DF /* Assets.xcassets */,
 				EFE76544210F9900000F93DF /* LaunchScreen.storyboard */,
 				EFE76547210F9901000F93DF /* Info.plist */,
-				EFD47781210FC85400725264 /* Extensions.swift */,
 				EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */,
 			);
 			path = Victagram;
@@ -278,6 +289,7 @@
 				EF4A1A4B212235590010C6FD /* SharePhotoController.swift in Sources */,
 				EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */,
 				EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */,
+				EF78046C212371780061E6FA /* CustomImageView.swift in Sources */,
 				EF78046721235A360061E6FA /* Post.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,

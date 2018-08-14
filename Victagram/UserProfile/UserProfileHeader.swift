@@ -13,13 +13,14 @@ class UserProfileHeader: UICollectionViewCell {
 	
 	var user: User? {
 		didSet {
-			setupProfileImage()
+			guard let profileImageUrl = user?.profileImageUrl else { return }
+			profileImageView.loadImage(urlString: profileImageUrl)
 			usernameLabel.text = user?.username
 		}
 	}
 	
-	let profileImageView: UIImageView = {
-		let imageView = UIImageView()
+	let profileImageView: CustomImageView = {
+		let imageView = CustomImageView()
 		imageView.backgroundColor = .gray
 		return imageView
 	}()
@@ -142,28 +143,6 @@ class UserProfileHeader: UICollectionViewCell {
 		stackView.anchor(top: nil, left: leftAnchor, bottom: self.bottomAnchor, right: rightAnchor , paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
 		topDividerView.anchor(top: stackView.topAnchor , left: leftAnchor, bottom: nil, right: rightAnchor , paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5)
 		bottomDividerView.anchor(top: stackView.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0.5)
-	}
-
-	
-	fileprivate func setupProfileImage() {
-		
-		guard let profileImageUrl = user?.profileImageUrl else { return }
- 		guard let url = URL(string: profileImageUrl) else { return }
-		URLSession.shared.dataTask(with: url) { (data, response, error) in
-			// check for error and construct image using data
-			if let error = error {
-				print("Failed to fetch profile image:", error)
-				return
-			}
-			
-			guard let data = data else { return }
-			
-			let image = UIImage(data: data)
-			DispatchQueue.main.async {
-				self.profileImageView.image = image
-			}
-			
-			}.resume()
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
