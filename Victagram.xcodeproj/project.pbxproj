@@ -19,6 +19,8 @@
 		EF78046721235A360061E6FA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046621235A360061E6FA /* Post.swift */; };
 		EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */; };
 		EF78046C212371780061E6FA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046B212371780061E6FA /* CustomImageView.swift */; };
+		EF8DC8BB21245872002FD434 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DC8BA21245872002FD434 /* HomeController.swift */; };
+		EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DC8BC2124602E002FD434 /* HomePostCell.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
@@ -44,6 +46,8 @@
 		EF78046621235A360061E6FA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		EF78046B212371780061E6FA /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		EF8DC8BA21245872002FD434 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		EF8DC8BC2124602E002FD434 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		EF8DC8B921245862002FD434 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF8DC8BA21245872002FD434 /* HomeController.swift */,
+				EF8DC8BC2124602E002FD434 /* HomePostCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		EFE7652F210F98FF000F93DF = {
 			isa = PBXGroup;
 			children = (
@@ -151,14 +164,15 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EF8DC8B921245862002FD434 /* Home */,
 				EF78046521235A250061E6FA /* Model */,
 				EF46B6EC211F130300303E92 /* Add Photo */,
 				EF59B6BE2114AD24007654A1 /* Login */,
 				EF62478A2112065F00A45936 /* UserProfile */,
+				EF78046A212371560061E6FA /* Utils */,
 				EFE7653B210F9900000F93DF /* AppDelegate.swift */,
 				EF6247862111E06700A45936 /* MainTabBarController.swift */,
 				EFE7653F210F9900000F93DF /* Main.storyboard */,
-				EF78046A212371560061E6FA /* Utils */,
 				EFE76542210F9900000F93DF /* Assets.xcassets */,
 				EFE76544210F9900000F93DF /* LaunchScreen.storyboard */,
 				EFE76547210F9901000F93DF /* Info.plist */,
@@ -298,8 +312,10 @@
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,
 				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
 				EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */,
+				EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */,
 				EF4A1A4921222B9C0010C6FD /* PhotoSelectorHeader.swift in Sources */,
 				EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */,
+				EF8DC8BB21245872002FD434 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
