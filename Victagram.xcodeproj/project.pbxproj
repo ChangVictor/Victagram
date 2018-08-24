@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF19B0712130770400A62893 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19B0702130770400A62893 /* User.swift */; };
 		EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */; };
 		EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */; };
 		EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */; };
@@ -34,6 +35,7 @@
 		7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Victagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1E956BBB5102EF1BC53408 /* Pods-Victagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.release.xcconfig"; sourceTree = "<group>"; };
 		A624EBCE6722C464567A8F3F /* Pods-Victagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Victagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Victagram/Pods-Victagram.debug.xcconfig"; sourceTree = "<group>"; };
+		EF19B0702130770400A62893 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				EF78046621235A360061E6FA /* Post.swift */,
+				EF19B0702130770400A62893 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				EF78046721235A360061E6FA /* Post.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,
+				EF19B0712130770400A62893 /* User.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
 				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,

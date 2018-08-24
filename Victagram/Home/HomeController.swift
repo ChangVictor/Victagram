@@ -29,24 +29,36 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 		
 		guard let uid = Auth.auth().currentUser?.uid else { return }
 		
-		let ref = Database.database().reference().child("posts").child(uid)
-		
-		ref.observeSingleEvent(of: .value, with: { (snapshot) in
+		Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
 			
-			guard let dictionaries = snapshot.value as? [String: Any] else { return }
+			guard let userDictionary = snapshot.value as? [String: Any] else { return }
 			
-			dictionaries.forEach({ (key, value) in
-				guard let dictionary = value as? [String: Any] else { return }
+			let user = User(dictionary: userDictionary)
+			
+			let ref = Database.database().reference().child("posts").child(uid)
+			
+			ref.observeSingleEvent(of: .value, with: { (snapshot) in
 				
-				let post = Post(dictionary: dictionary)
-				self.posts.append(post)
-			})
-			
-			self.collectionView?.reloadData()
-			
+				guard let dictionaries = snapshot.value as? [String: Any] else { return }
+				
+				dictionaries.forEach({ (key, value) in
+					guard let dictionary = value as? [String: Any] else { return }
+					
+					let post = Post(user: user, dictionary: dictionary)
+					self.posts.append(post)
+				})
+				
+				self.collectionView?.reloadData()
+				
+			}) { (error) in
+				print("Failed to fetch posts: ", error)
+			}
+
+
 		}) { (error) in
-			print("Failed to fetch posts: ", error)
+			print("Failed to fetch user for posts: ", error)
 		}
+		
 	}
 	
 	fileprivate func setupNavigationItems() {
@@ -58,7 +70,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 		var height: CGFloat = 40 + 8 + 8
 		height += view.frame.width
 		height += 50	// stackview
-		height += 80 // captionLabel
+		height += 60 // captionLabel
 		
 		return CGSize(width: view.frame.width, height: height)
 	}

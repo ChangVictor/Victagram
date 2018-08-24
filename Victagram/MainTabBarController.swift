@@ -25,7 +25,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 			return false
 		}
 		
-		return false
+		return true
 	}
 	
 	override func viewDidLoad() {
@@ -57,20 +57,23 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 		// like
 		let likeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected"))
 		// user profile
-		let layout = UICollectionViewFlowLayout()
-		let userProfileController = UserProfileController(collectionViewLayout: layout)
+		let profileNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"), rootViewController: UserProfileController(collectionViewLayout: UICollectionViewFlowLayout()))
 		
-		let userProfileNavController = UINavigationController(rootViewController: userProfileController)
-		
-		userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
-		userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
+//		let layout = UICollectionViewFlowLayout()
+//		let userProfileController = UserProfileController(collectionViewLayout: layout)
+//
+//		let userProfileNavController = UINavigationController(rootViewController: userProfileController)
+//
+//		userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
+//		userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
+//		tabBar.tintColor = .black
 		tabBar.tintColor = .black
 		
 		viewControllers = [homeNavController,
 						   searchNavController,
 						   plusNavController,
 						   likeNavController,
-						   userProfileNavController]
+						   profileNavController]
 		
 		// modify tabBarItems insets
 		guard let items = tabBar.items else { return }
