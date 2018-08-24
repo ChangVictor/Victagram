@@ -51,7 +51,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 		// home
 		let homeNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: HomeController(collectionViewLayout: UICollectionViewFlowLayout()))
 		// search
-		let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"))
+		let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"), rootViewController: UserSearchController(collectionViewLayout: UICollectionViewFlowLayout()))
 		// plus
 		let plusNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selectedImage: #imageLiteral(resourceName: "plus_unselected"))
 		// like
@@ -59,14 +59,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 		// user profile
 		let profileNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected"), rootViewController: UserProfileController(collectionViewLayout: UICollectionViewFlowLayout()))
 		
-//		let layout = UICollectionViewFlowLayout()
-//		let userProfileController = UserProfileController(collectionViewLayout: layout)
-//
-//		let userProfileNavController = UINavigationController(rootViewController: userProfileController)
-//
-//		userProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "profile_unselected")
-//		userProfileNavController.tabBarItem.selectedImage = #imageLiteral(resourceName: "profile_selected")
-//		tabBar.tintColor = .black
 		tabBar.tintColor = .black
 		
 		viewControllers = [homeNavController,
