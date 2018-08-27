@@ -12,7 +12,7 @@ import Firebase
 class UserSearchController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 	
 	let cellId = "cellId"
-	
+		
 	lazy var searchBar: UISearchBar = {
 		let searchBar = UISearchBar()
 		searchBar.placeholder = "Enter Username"
@@ -27,12 +27,10 @@ class UserSearchController: UICollectionViewController, UICollectionViewDelegate
 		if searchText.isEmpty {
 			filteredUsers = users
 		} else {
-			
 			filteredUsers = self.users.filter { (user) -> Bool in
 				return user.username.lowercased().contains(searchText.lowercased())
 			}
 		}
-
 		self.collectionView?.reloadData()
 		
 	}
@@ -48,6 +46,7 @@ class UserSearchController: UICollectionViewController, UICollectionViewDelegate
 		
 		collectionView?.register(UserSearchCell.self, forCellWithReuseIdentifier: cellId)
 		collectionView?.alwaysBounceVertical = true
+		collectionView?.keyboardDismissMode = .onDrag
 		
 		fetchUsers()
 		
@@ -67,6 +66,7 @@ class UserSearchController: UICollectionViewController, UICollectionViewDelegate
 		print(user.username)
 		
 		let userProfileController = UserProfileController(collectionViewLayout: UICollectionViewFlowLayout())
+		userProfileController.userId = user.uid
 		navigationController?.pushViewController(userProfileController, animated: true)
 	}
 	

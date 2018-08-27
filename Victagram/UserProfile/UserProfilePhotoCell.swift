@@ -14,13 +14,11 @@ class UserProfilePhotoCell: UICollectionViewCell {
 		didSet {
 			guard let imageUrl = post?.imageUrl else { return }
 			photoImageView.loadImage(urlString: imageUrl)
-			
 		}
 	}
 	
 	let photoImageView: CustomImageView = {
 		let imageView = CustomImageView()
-		imageView.backgroundColor = .red
 		imageView.contentMode = .scaleAspectFill
 		imageView.clipsToBounds = true
 		return imageView
