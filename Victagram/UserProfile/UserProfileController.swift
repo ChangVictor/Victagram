@@ -17,7 +17,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		super.viewDidLoad()
 		
 		collectionView?.backgroundColor = .white
-		navigationItem.title = Auth.auth().currentUser?.uid
+//		navigationItem.title = Auth.auth().currentUser?.uid
 		
 		fetchUser()
 		collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerId")
@@ -117,7 +117,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		guard  let uid = Auth.auth().currentUser?.uid else { return }
 		Database.fetchUserWithUID(uid: uid) { (user) in
 			self.user = user
-			self.navigationItem.title = self.user?.username
+//			self.navigationItem.title = self.user?.username
 			self.collectionView?.reloadData()
 			
 		}
