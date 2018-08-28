@@ -60,11 +60,12 @@ class SharePhotoController: UIViewController {
 		guard let caption = textView.text, caption.count  > 0 else { return }
 		guard let image = selectedImage else { return }
 		guard let uploadData = UIImageJPEGRepresentation(image, 0.5) else { return }
+		
 		navigationItem.rightBarButtonItem?.isEnabled = false
 		
 		let filename = NSUUID().uuidString
+		
 		let storageRef = Storage.storage().reference().child("posts").child(filename)
-
 		storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
 			
 			if let error = error {
@@ -72,6 +73,7 @@ class SharePhotoController: UIViewController {
 				print("Failed to upload post image:", error)
 				return
 			}
+			
 			storageRef.downloadURL(completion: { (downloadURL, error) in
 				if let error = error {
 					print("Failed to fetch downloadURL", error)
@@ -80,11 +82,14 @@ class SharePhotoController: UIViewController {
 				guard let imageUrl = downloadURL?.absoluteString else { return }
 				
 				print("Succesfully uploaded post image:", imageUrl)
+				
 				self.saveToDatabaseWithImageUrl(imageUrl: imageUrl )
 			})
 		}
 	}
 	
+	static let updateFeedNotificationName = NSNotification.Name(rawValue: "UptadeFeed")
+
 	fileprivate func saveToDatabaseWithImageUrl(imageUrl: String ) {
 		guard let postImage = selectedImage else { return }
 		guard let caption = textView.text else { return }
@@ -103,6 +108,8 @@ class SharePhotoController: UIViewController {
 			}
 			print("Succesfully saved post to Database")
 			self.dismiss(animated: true, completion: nil)
+			
+			NotificationCenter.default.post(name: SharePhotoController.updateFeedNotificationName, object: nil)
 		}
 		
 	}
