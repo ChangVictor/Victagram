@@ -25,6 +25,7 @@
 		EF78046C212371780061E6FA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046B212371780061E6FA /* CustomImageView.swift */; };
 		EF8DC8BB21245872002FD434 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DC8BA21245872002FD434 /* HomeController.swift */; };
 		EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DC8BC2124602E002FD434 /* HomePostCell.swift */; };
+		EFAE13472136D84F0057CF02 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE13462136D84F0057CF02 /* CameraController.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
@@ -56,6 +57,7 @@
 		EF78046B212371780061E6FA /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		EF8DC8BA21245872002FD434 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		EF8DC8BC2124602E002FD434 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		EFAE13462136D84F0057CF02 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		EFAE13452136D8420057CF02 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE13462136D84F0057CF02 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		EFE7652F210F98FF000F93DF = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		EFE7653A210F98FF000F93DF /* Victagram */ = {
 			isa = PBXGroup;
 			children = (
+				EFAE13452136D8420057CF02 /* Camera */,
 				EF19B0742130B65500A62893 /* Search */,
 				EF8DC8B921245862002FD434 /* Home */,
 				EF78046521235A250061E6FA /* Model */,
@@ -329,6 +340,7 @@
 				EF78046721235A360061E6FA /* Post.swift in Sources */,
 				EF19B0762130B66000A62893 /* UserSearchController.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
+				EFAE13472136D84F0057CF02 /* CameraController.swift in Sources */,
 				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,
 				EF19B0712130770400A62893 /* User.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
@@ -485,7 +497,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDGVKMUQS5;
 				INFOPLIST_FILE = Victagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +517,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XDGVKMUQS5;
 				INFOPLIST_FILE = Victagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

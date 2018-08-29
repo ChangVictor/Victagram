@@ -99,9 +99,11 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
 				
 				let imageManager = PHImageManager.default()
 				let targetSize = CGSize(width: 600, height: 600)
-				imageManager.requestImage(for: selectedAsset, targetSize: targetSize, contentMode: .default, options: nil) { (image, info) in
+				imageManager.requestImage(for: selectedAsset, targetSize: targetSize, contentMode: .default, options: nil, resultHandler: { (image, info) in
+					
 					header.photoImageView.image = image
-				}
+					
+				})
 			}
 		}
 		
