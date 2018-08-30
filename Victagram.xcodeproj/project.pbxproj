@@ -20,6 +20,7 @@
 		EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247862111E06700A45936 /* MainTabBarController.swift */; };
 		EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6247882111E2FF00A45936 /* UserProfileController.swift */; };
 		EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62478B2112067500A45936 /* UserProfileHeader.swift */; };
+		EF6D3D7F21383036000E9F6A /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D3D7E21383036000E9F6A /* PreviewPhotoContainerView.swift */; };
 		EF78046721235A360061E6FA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046621235A360061E6FA /* Post.swift */; };
 		EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */; };
 		EF78046C212371780061E6FA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78046B212371780061E6FA /* CustomImageView.swift */; };
@@ -52,6 +53,7 @@
 		EF6247862111E06700A45936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		EF6247882111E2FF00A45936 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		EF62478B2112067500A45936 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		EF6D3D7E21383036000E9F6A /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 		EF78046621235A360061E6FA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EF78046821235CBB0061E6FA /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		EF78046B212371780061E6FA /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				EFAE13462136D84F0057CF02 /* CameraController.swift */,
+				EF6D3D7E21383036000E9F6A /* PreviewPhotoContainerView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				EF62478C2112067500A45936 /* UserProfileHeader.swift in Sources */,
 				EF6247892111E2FF00A45936 /* UserProfileController.swift in Sources */,
 				EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */,
+				EF6D3D7F21383036000E9F6A /* PreviewPhotoContainerView.swift in Sources */,
 				EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */,
 				EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */,
 				EF4A1A4921222B9C0010C6FD /* PhotoSelectorHeader.swift in Sources */,
