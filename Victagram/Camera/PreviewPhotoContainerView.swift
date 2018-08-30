@@ -13,6 +13,7 @@ class PreviewPhotoContainerView: UIView {
 	
 	let previewImageView: UIImageView = {
 		let imageView = UIImageView()
+		imageView.contentMode = .scaleAspectFill
 		return imageView
 	}()
 	
