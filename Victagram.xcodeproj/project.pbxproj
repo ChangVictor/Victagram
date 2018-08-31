@@ -29,6 +29,7 @@
 		EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DC8BC2124602E002FD434 /* HomePostCell.swift */; };
 		EFAE13472136D84F0057CF02 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE13462136D84F0057CF02 /* CameraController.swift */; };
 		EFD47782210FC85400725264 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD47781210FC85400725264 /* Extensions.swift */; };
+		EFE501A921397C9200FEF942 /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE501A821397C9200FEF942 /* CustomAnimationDismisser.swift */; };
 		EFE7653C210F9900000F93DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653B210F9900000F93DF /* AppDelegate.swift */; };
 		EFE7653E210F9900000F93DF /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7653D210F9900000F93DF /* SignUpController.swift */; };
 		EFE76541210F9900000F93DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7653F210F9900000F93DF /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		EF8DC8BC2124602E002FD434 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		EFAE13462136D84F0057CF02 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		EFD47781210FC85400725264 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFE501A821397C9200FEF942 /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 		EFE76538210F98FF000F93DF /* Victagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7653B210F9900000F93DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE7653D210F9900000F93DF /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				EFAE13462136D84F0057CF02 /* CameraController.swift */,
 				EF6D3D7E21383036000E9F6A /* PreviewPhotoContainerView.swift */,
 				EF6D3D802138954F000E9F6A /* CustomAnimationPresenter.swift */,
+				EFE501A821397C9200FEF942 /* CustomAnimationDismisser.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				EF59B6C02114AD5D007654A1 /* LoginController.swift in Sources */,
 				EF8DC8BD2124602E002FD434 /* HomePostCell.swift in Sources */,
 				EF4A1A4921222B9C0010C6FD /* PhotoSelectorHeader.swift in Sources */,
+				EFE501A921397C9200FEF942 /* CustomAnimationDismisser.swift in Sources */,
 				EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */,
 				EF8DC8BB21245872002FD434 /* HomeController.swift in Sources */,
 			);

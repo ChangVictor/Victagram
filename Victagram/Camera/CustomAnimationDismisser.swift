@@ -1,17 +1,17 @@
 //
-//  CustomAnimationPresenter.swift
+//  CustomAnimationDismissal.swift
 //  Victagram
 //
-//  Created by Victor Chang on 30/08/2018.
+//  Created by Victor Chang on 31/08/2018.
 //  Copyright © 2018 Victor Chang. All rights reserved.
 //
 
 import UIKit
 
-class CustomAnimationPresenter: NSObject, UIViewControllerAnimatedTransitioning {
+class CustomAnimationDismisser: NSObject, UIViewControllerAnimatedTransitioning {
 	
 	func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-		return 0.5
+		 return 0.5
 	}
 	
 	func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -24,21 +24,17 @@ class CustomAnimationPresenter: NSObject, UIViewControllerAnimatedTransitioning 
 		
 		containerView.addSubview(toView)
 		
-		let startingFrame = CGRect(x: -toView.frame.width, y: 0, width: toView.frame.width, height: toView.frame.height)
-		toView.frame = startingFrame
-		
 		UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
 			// Animation
+			fromView.frame = CGRect(x: -fromView.frame.width, y: 0, width: fromView.frame.width, height: fromView.frame.height)
+			
 			toView.frame = CGRect(x: 0, y: 0, width: toView.frame.width, height: toView.frame.height)
 			
-			fromView.frame = CGRect(x: fromView.frame.width, y: 0, width: fromView.frame.width, height: fromView.frame.height)
-			
-		}) { (_) in
+		}) { (_ ) in
 			
 			transitionContext.completeTransition(true)
-
 		}
+		
 	}
+	
 }
-
-

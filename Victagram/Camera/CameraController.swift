@@ -37,10 +37,16 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate, UIViewC
 	}
 	
 	let customAnimationPresenter = CustomAnimationPresenter()
+	let customAnimationDismisser = CustomAnimationDismisser()
 	
 	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		
 		return customAnimationPresenter
+	}
+	
+	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		
+		return customAnimationDismisser
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -60,6 +66,8 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate, UIViewC
 	
 	@objc fileprivate func handleDismiss() {
 		print("Dismissing Camera...")
+		dismiss(animated: true, completion: nil)
+		
 	}
 	
 	@objc fileprivate func handleCapturePhoto() {
