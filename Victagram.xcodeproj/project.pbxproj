@@ -35,6 +35,7 @@
 		EFE76541210F9900000F93DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7653F210F9900000F93DF /* Main.storyboard */; };
 		EFE76543210F9900000F93DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE76542210F9900000F93DF /* Assets.xcassets */; };
 		EFE76546210F9900000F93DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE76544210F9900000F93DF /* LaunchScreen.storyboard */; };
+		EFF0FF73213ACB90005ED93D /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0FF72213ACB90005ED93D /* CommentController.swift */; };
 		F5640BC03BFC6274CA8B7887 /* Pods_Victagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C27A646044EEA8CD8BECDFF /* Pods_Victagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		EFE76542210F9900000F93DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE76545210F9900000F93DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE76547210F9901000F93DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF0FF72213ACB90005ED93D /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				EF8DC8BA21245872002FD434 /* HomeController.swift */,
 				EF8DC8BC2124602E002FD434 /* HomePostCell.swift */,
+				EFF0FF72213ACB90005ED93D /* CommentController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				EF19B0762130B66000A62893 /* UserSearchController.swift in Sources */,
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EFAE13472136D84F0057CF02 /* CameraController.swift in Sources */,
+				EFF0FF73213ACB90005ED93D /* CommentController.swift in Sources */,
 				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,
 				EF19B0712130770400A62893 /* User.swift in Sources */,
 				EF6247872111E06700A45936 /* MainTabBarController.swift in Sources */,
