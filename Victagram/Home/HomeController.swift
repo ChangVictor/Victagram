@@ -89,7 +89,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 			dictionaries.forEach({ (key, value) in
 				guard let dictionary = value as? [String: Any] else { return }
 				
-				let post = Post(user: user, dictionary: dictionary)
+				var post = Post(user: user, dictionary: dictionary)
+				post.id = key
 				
 				self.posts.append(post)
 			})
