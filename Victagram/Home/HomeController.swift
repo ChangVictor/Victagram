@@ -148,7 +148,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 		print(post.caption)
 		
 		let commentsController = CommentController(collectionViewLayout: UICollectionViewFlowLayout())
-		
+		commentsController.post = post
 		navigationController?.pushViewController(commentsController, animated: true)
 		
 	}
