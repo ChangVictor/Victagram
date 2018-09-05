@@ -12,23 +12,19 @@ import Firebase
 class UserProfileController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UserProfileHeaderDelegate {
 	
 	var isGridView = true
-	
-	func didChangeToListView() {
-		
-		isGridView = false
-		collectionView?.reloadData()
-	}
+	let cellId = "cellId"
+	let homePostCellId = "homePostCellId"
+	var userId: String?
 	
 	func didChangeToGridView() {
-		
 		isGridView = true
 		collectionView?.reloadData()
 	}
 	
-	
-	let cellId = "cellId"
-	let homePostCellId = "homePostCellId"
-	var userId: String?
+	func didChangeToListView() {
+		isGridView = false
+		collectionView?.reloadData()
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -45,7 +41,57 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		
 	}
 	
+	
+	var isFinishedPaging = false
 	var posts = [Post]()
+	
+	fileprivate func paginatePost() {
+		print("Start pagin for more posts...")
+		
+		guard let uid = self.user?.uid else { return }
+		let ref = Database.database().reference().child("posts").child(uid)
+		
+		var query = ref.queryOrderedByKey()
+		
+		if posts.count > 0 {
+			let value = posts.last?.id
+			query = query.queryStarting(atValue: value)
+		}
+		
+		query.queryLimited(toFirst: 4).observeSingleEvent(of: .value, with: { (snapshot) in
+
+			guard var allObjects = snapshot.children.allObjects as? [DataSnapshot] else { return }
+			
+			if allObjects.count < 4 {
+				self.isFinishedPaging = true
+			}
+			
+			if self.posts.count > 0 {
+				allObjects.removeFirst()
+			}
+			
+			guard let user = self.user else { return }
+			
+			allObjects.forEach({ (snapshot) in
+
+				guard let dictionary = snapshot.value as? [String: Any] else { return }
+				var post = Post(user: user, dictionary: dictionary)
+				post.id = snapshot.key
+				
+				self.posts.append(post)
+//				print(snapshot.key)
+			})
+			
+			self.posts.forEach({ (post) in
+				print(post.id ?? "")
+			})
+			
+			self.collectionView?.reloadData()
+			
+		}) { (error) in
+			print("Failed to paginte posts: ", error)
+		}
+	}
 	
 	fileprivate func fetchOrderedPosts() {
 		guard let uid = self.user?.uid else { return }
@@ -97,6 +143,11 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		
+		if indexPath.item == self.posts.count - 1 && !isFinishedPaging {
+			print("Paginating for posts...")
+			paginatePost()
+		}
 		
 		if isGridView {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! UserProfilePhotoCell
@@ -155,9 +206,10 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 //		guard  let uid = Auth.auth().currentUser?.uid else { return }
 		Database.fetchUserWithUID(uid: uid) { (user) in
 			self.user = user
+			self.navigationItem.title = self.user?.username
 			self.collectionView?.reloadData()
 			
-			self.fetchOrderedPosts()
+			self.paginatePost()
 		}
 	}
 }

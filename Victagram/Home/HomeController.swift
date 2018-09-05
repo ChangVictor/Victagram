@@ -37,6 +37,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 	@objc func handleRefresh() {
 		print("Handling refresh...")
 		posts.removeAll()
+		collectionView?.reloadData()
 		fetchAllPosts()
 	}
 	

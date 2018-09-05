@@ -17,7 +17,7 @@ struct Post {
 	let caption: String
 	let creationDate: Date
 	
-	var hasLiked: Bool = false
+	var hasLiked = false
 	
 	init(user: User, dictionary: [String: Any]) {
 		self.user = user
