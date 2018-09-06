@@ -13,6 +13,7 @@
 		EF19B0782130BE5000A62893 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF19B0772130BE5000A62893 /* UserSearchCell.swift */; };
 		EF2850B7213DC07700CFFBD2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2850B6213DC07600CFFBD2 /* CommentCell.swift */; };
 		EF2850B9213DCC2700CFFBD2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2850B8213DCC2700CFFBD2 /* Comment.swift */; };
+		EF3074A92141BDA5008F23D4 /* CommentInputAccesoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3074A82141BDA5008F23D4 /* CommentInputAccesoryView.swift */; };
 		EF43E2D7211101A1004E0F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */; };
 		EF46B6EE211F133000303E92 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */; };
 		EF4A1A47212226290010C6FD /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */; };
@@ -51,6 +52,7 @@
 		EF19B0772130BE5000A62893 /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		EF2850B6213DC07600CFFBD2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		EF2850B8213DCC2700CFFBD2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		EF3074A82141BDA5008F23D4 /* CommentInputAccesoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccesoryView.swift; sourceTree = "<group>"; };
 		EF43E2D6211101A1004E0F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF46B6ED211F133000303E92 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		EF4A1A46212226290010C6FD /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				EF8DC8BC2124602E002FD434 /* HomePostCell.swift */,
 				EFF0FF72213ACB90005ED93D /* CommentController.swift */,
 				EF2850B6213DC07600CFFBD2 /* CommentCell.swift */,
+				EF3074A82141BDA5008F23D4 /* CommentInputAccesoryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Victagram/Pods-Victagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -316,6 +320,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -361,6 +366,7 @@
 				EFD47782210FC85400725264 /* Extensions.swift in Sources */,
 				EFAE13472136D84F0057CF02 /* CameraController.swift in Sources */,
 				EFF0FF73213ACB90005ED93D /* CommentController.swift in Sources */,
+				EF3074A92141BDA5008F23D4 /* CommentInputAccesoryView.swift in Sources */,
 				EF78046921235CBB0061E6FA /* UserProfilePhotoCell.swift in Sources */,
 				EF2850B7213DC07700CFFBD2 /* CommentCell.swift in Sources */,
 				EF19B0712130770400A62893 /* User.swift in Sources */,
